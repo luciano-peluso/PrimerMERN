@@ -11,7 +11,6 @@ const traerProductos = async (req, res) => {
     }
 }
 
-
 const crearProducto = async (req, res) => {
     const producto = req.body; // Info enviada por el usuario
 
@@ -30,19 +29,21 @@ const crearProducto = async (req, res) => {
     }
 }
 
-
 const borrarProducto = async (req, res) => {
     const { id } = req.params;
+
+    if (!mongoose.Types.ObjectId.isValid(id)){
+        return res.status(404).json({ success:false, message:"Id de producto no encontrado" });
+    }
 
     try {
         await Producto.findByIdAndDelete(id);
         res.status(200).json({ success: true, message:"Producto borrado" });
     } catch (error) {
         console.error("Error en borrar el producto: "+ error.message);
-        res.status(404).json({ success: false, message:"Producto no encontrado" });
+        res.status(500).json({ success: false, message:"Error en el server" });
     }
 }
-
 
 const actualizarProducto = async (req, res) => {
     const { id } = req.params;

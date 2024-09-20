@@ -7,6 +7,7 @@ const productoRoute = require('./routes/productoRoute');
 dotenv.config();
 
 const app = express();
+const PORT = process.env.PORT || 5000;
 
 app.use(express.json()); // Nos permite aceptar datos en formato JSON en el req.body
 
@@ -18,7 +19,7 @@ app.use('/api/productos', productoRoute);
 
 console.log(process.env.MONGO_URI)
 
-app.listen(5000, () => {
+app.listen(PORT, () => {
     connectDB();
-    console.log("Servidor levantado en http://localhost:5000");
+    console.log("Servidor levantado en http://localhost:"+PORT);
 })
