@@ -30,7 +30,7 @@ Estos son los pasos para correrlo localmente en tu máquina.
 `git clone https://github.com/luciano-peluso/PrimerMERN.git`
 
 2. Andá a la carpeta del proyecto:
-`cd PrimerMERN
+`cd PrimerMERN`
 
 Ahora hay que instalar las dependencias tanto en el back como en el front.
 
