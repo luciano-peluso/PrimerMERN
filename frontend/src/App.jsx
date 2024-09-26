@@ -4,8 +4,10 @@ import { Route, Routes } from "react-router-dom"
 import CreatePage from "./paginas/CreatePage"
 import HomePage from "./paginas/HomePage"
 import Navbar from "./componentes/Navbar"
+import { useProductStore } from "./store/producto"
 
 function App() {
+  const { productos } = useProductStore();
   return (
       <Box minH={"100vh"} bg={useColorModeValue("gray.100", "gray.900")}>
         <Navbar /> 

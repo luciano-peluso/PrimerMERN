@@ -13,10 +13,11 @@ const traerProductos = async (req, res) => {
 
 const crearProducto = async (req, res) => {
     const producto = req.body; // Info enviada por el usuario
-
-    if (!producto.nombre || !producto.precio || !producto.imagen){
-        return res.status(400).json({ success: false, message:"Por favor, complete todos los campos"});
-    }
+    
+    // Podes evitarte este chequeo con tan solo un 'require' en el form!
+    // if (!producto.nombre || !producto.precio || !producto.imagen){
+    //     return res.status(400).json({ success: false, message:"Por favor, complete todos los campos"});
+    // }
 
     const nuevoProducto = new Producto(producto);
 
@@ -56,9 +57,9 @@ const actualizarProducto = async (req, res) => {
 
     try {
         const productoActualizado = await Producto.findByIdAndUpdate(id, producto, {new:true});
-        res.status(200).json({ success:true, data:productoActualizado });
+        res.status(200).json({ success:true, data:productoActualizado, message:"El producto se actualizó con éxito"});
     } catch (error) {
-        console.error()
+        console.error(error.message);
         res.status(500).json({success:false, message:"Error en el server"});
     }
 }
