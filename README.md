@@ -33,16 +33,16 @@ Estos son los pasos para correrlo localmente en tu máquina.
 `cd PrimerMERN
 
 3. Instalá las dependencias tanto en el back como en el front:
-3.1 Para el backend
-`cd ../backend
-npm install`
+4 Para el backend
+`cd ../backend`
+`npm install`
 
-3.2 Para el frontend
-`cd ../frontend
-npm install`
+5 Para el frontend
+`cd ../frontend`
+`npm install`
 
-4. Iniciá el servidor y el cliente:
-Metete primero en la carpeta del backend corré el comando y luego en otra consola lo mismo, pero para el frontend
+6. Iniciá el servidor y el cliente:
+Así como para instalar las dependencias, primero te tenés que meter en la carpeta del backend correr el comando y luego lo mismo, pero para el frontend.
 `npm run dev`
 Esto corre el servidor en http://localhost:5000 y el cliente en http://localhost:5173.
 
