@@ -1,11 +1,12 @@
 # MERN CRUD de Productos
-Este es un proyecto de ejemplo construido con el stack MERN (MongoDB, Express, React, Node.js) que permite gestionar un CRUD (Crear, Leer, Actualizar y Eliminar) de productos. La interfaz de usuario está diseñada con Chakra UI para un estilo moderno y responsivo.
+Este es un proyecto de práçtica construido con el stack MERN que permite gestionar un CRUD de productos. La interfaz de usuario está hecha con Chakra UI para un estilo moderno y responsive (y para practicar librerías de diseño). 
 
 ## Características
+El proyecto es básico, son 2 páginas donde uno puede:
 - Crear nuevos productos.
 - Leer la lista de productos disponibles.
 - Actualizar información de un producto existente.
-- Eliminar productos.
+- Borrar productos.
 
 ## Tecnologías utilizadas
 Aunque ya lo sabemos, el stack MERN refiere a:
@@ -14,38 +15,36 @@ Aunque ya lo sabemos, el stack MERN refiere a:
 - React: Librería de frontend para construir la interfaz de usuario.
 - Node.js: Entorno de ejecución para el backend.
 
-  Lo que agregué para el desarrollo del front fue:
-- Chakra UI: Librería de componentes para React que facilita el desarrollo de interfaces modernas y accesibles.
+Lo que agregué para el desarrollo del front fue:
+- Chakra UI: Que es una librería de componentes para React que facilita el desarrollo de interfaces.
   
 ## Requisitos previos
-Antes de comenzar, asegúrate de tener lo siguiente instalado en tu sistema:
-
+Para usarlo tenés que tener instalado:
 - Node.js
 - MongoDB
 
 ## Instalación y configuración
-Clona este repositorio en tu máquina:
+Estos son los pasos para correrlo localmente en tu máquina.
+1. Clonate este repositorio en tu PC:
 
-`git clone https://github.com/tu-usuario/tu-repo.git`
+`git clone https://github.com/luciano-peluso/PrimerMERN.git`
 
-Dirígete a la carpeta del proyecto:
-`cd nombre-del-proyecto`
+2. Andá a la carpeta del proyecto:
+`cd PrimerMERN
 
-Instala las dependencias tanto en el servidor como en el cliente:
-
-### Para el backend
+3. Instalá las dependencias tanto en el back como en el front:
+3.1 Para el backend
 `cd ../backend
 npm install`
 
-### Para el frontend
+3.2 Para el frontend
 `cd ../frontend
 npm install`
 
-Inicia el servidor y el cliente:
-
-### En la carpeta del backend y del frontend
+4. Iniciá el servidor y el cliente:
+Metete primero en la carpeta del backend corré el comando y luego en otra consola lo mismo, pero para el frontend
 `npm run dev`
-Esto iniciará el servidor en http://localhost:5000 y el cliente en http://localhost:5173.
+Esto corre el servidor en http://localhost:5000 y el cliente en http://localhost:5173.
 
 ## Endpoints de la API
 La API se basa en el CRUD de productos, siendo bastantes sencillos sus endpoints como:
@@ -53,6 +52,3 @@ La API se basa en el CRUD de productos, siendo bastantes sencillos sus endpoints
 - POST /api/productos
 - PUT /api/productos/{id}
 - DELETE /api/productos/{id}
-
-## Licencia
-Este proyecto está bajo la licencia MIT. Puedes consultar más detalles en el archivo LICENSE.
