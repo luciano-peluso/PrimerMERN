@@ -27,28 +27,28 @@ Para usarlo tenés que tener instalado:
 Estos son los pasos para correrlo localmente en tu máquina.
 1. Clonate este repositorio en tu PC:
 
-`git clone https://github.com/luciano-peluso/PrimerMERN.git`
+  `git clone https://github.com/luciano-peluso/PrimerMERN.git`
 
 2. Andá a la carpeta del proyecto:
 
-`cd PrimerMERN`
+  `cd PrimerMERN`
 
-Ahora hay que instalar las dependencias tanto en el back como en el front.
+  Ahora hay que instalar las dependencias tanto en el back como en el front.
 
 3. Para el backend:
 
-`cd ../backend`
-`npm install`
+  `cd ../backend`
+  `npm install`
 
 4. Para el frontend:
 
-`cd ../frontend`
-`npm install`
+  `cd ../frontend`
+  `npm install`
 
 5. Iniciá el servidor y el cliente:
-Así como para instalar las dependencias, primero te tenés que meter en la carpeta del backend correr el comando y luego lo mismo, pero para el frontend.
-`npm run dev`
-Esto corre el servidor en http://localhost:5000 y el cliente en http://localhost:5173.
+  Así como para instalar las dependencias, primero te tenés que meter en la carpeta del backend correr el comando y luego lo mismo, pero para el frontend.
+  `npm run dev`
+  Esto corre el servidor en http://localhost:5000 y el cliente en http://localhost:5173.
 
 ## Endpoints de la API
 La API se basa en el CRUD de productos, siendo bastantes sencillos sus endpoints como:
