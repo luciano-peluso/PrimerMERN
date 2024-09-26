@@ -34,11 +34,11 @@ Estos son los pasos para correrlo localmente en tu máquina.
 
 Ahora hay que instalar las dependencias tanto en el back como en el front.
 
-3. Para el backend
+3. Para el backend:
 `cd ../backend`
 `npm install`
 
-4. Para el frontend
+4. Para el frontend:
 `cd ../frontend`
 `npm install`
 
